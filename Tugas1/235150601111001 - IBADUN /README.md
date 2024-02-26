@@ -1,14 +1,14 @@
 # 📁 Tugas 1 : Mengulang Materi PEMDAS
 
 ## 👤 Identitas Intern
-Nama : Devan             
-NIM  : 22xxxxxx
+Nama : IBADUN NAZRATUL LATHIFAH             
+NIM  : 235150601111001
 
 ## 📤 Submission
 
 ### Template utk opsi tugas 1
-Opsi Tugas : 1        
-Aplikasi / Webapp / Game yang ditiru : Game A     
+Opsi Tugas : 2        
+Aplikasi / Webapp / Game yang ditiru : -     
 Fitur yang ditiru : fitur A     
 
 ### Template utk opsi tugas 2
