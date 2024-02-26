@@ -11,7 +11,7 @@ public class Mahasiswa {
     static double[] nilaiMahasiswa = new double[mataKuliah.length];
 
     public static void main(String[] args) {
-        System.out.println("Selamat datang di Sistem Informasi Akademik Mahasiswa");
+        System.out.println("Selamat datang di SIAM");
 
         int pilihan;
         do {
@@ -35,16 +35,16 @@ public class Mahasiswa {
                     CekNilai();
                     break;
                 case 4:
-                    System.out.println("Terima kasih telah menggunakan Sistem Informasi Akademik Mahasiswa");
+                    System.out.println("Terima kasih telah menggunakan SIAM !");
                     break;
                 default:
-                    System.out.println("Pilihan tidak valid. Silakan ulangi kembali.");
+                    System.out.println("Pilihan tidak valid. Silahkan ulangi kembali proses anda.");
             }
         } while (pilihan != 4);
     }
 
     static void daftarMataKuliah() {
-        System.out.println("\nPendaftaran Mata Kuliah");
+        System.out.println("\ndaftar Mata Kuliah");
         for (int i = 0; i < mataKuliah.length; i++) {
             System.out.println((i + 1) + ". " + mataKuliah[i]);
         }
@@ -55,25 +55,25 @@ public class Mahasiswa {
         if (indexMataKuliah >= 0 && indexMataKuliah < mataKuliah.length) {
             System.out.println("Anda telah mendaftar untuk mata kuliah ini" + mataKuliah[indexMataKuliah]);
         } else {
-            System.out.println("Pilihan tidak valid.");
+            System.out.println("Pilihan anda tidak valid.");
         }
     }
 
     static void JadwalKuliah() {
         System.out.println("\nJadwal Mata Kuliah");
         for (String[] jadwal : jadwalKuliah) {
-            System.out.println("Mata Kuliah: " + jadwal[0]);
-            System.out.println("Hari: " + jadwal[1]);
-            System.out.println("Jam: " + jadwal[2]);
+            System.out.println("Mata Kuliah : " + jadwal[0]);
+            System.out.println("Hari : " + jadwal[1]);
+            System.out.println("Jam : " + jadwal[2]);
             System.out.println();
         }
     }
 
     static void CekNilai() {
-        System.out.println("\nPengelolaan Nilai");
+        System.out.println("\nCek Nilai");
 
         for (int i = 0; i < mataKuliah.length; i++) {
-            System.out.print("Masukkan nilai mata kuliah " + mataKuliah[i] + ": ");
+            System.out.print("Masukkan nilai mata kuliah anda " + mataKuliah[i] + ": ");
             nilaiMahasiswa[i] = scanner.nextDouble();
         }
 
