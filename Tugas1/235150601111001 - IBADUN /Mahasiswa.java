@@ -26,7 +26,7 @@ public class Mahasiswa {
 
             switch (pilihan) {
                 case 1:
-                    daftarMataKuliah();
+                    DaftarMataKuliah();
                     break;
                 case 2:
                     JadwalKuliah();
@@ -43,8 +43,8 @@ public class Mahasiswa {
         } while (pilihan != 4);
     }
 
-    static void daftarMataKuliah() {
-        System.out.println("\ndaftar Mata Kuliah");
+    static void DaftarMataKuliah() {
+        System.out.println("\nDaftar Mata Kuliah");
         for (int i = 0; i < mataKuliah.length; i++) {
             System.out.println((i + 1) + ". " + mataKuliah[i]);
         }
@@ -53,7 +53,7 @@ public class Mahasiswa {
         int indexMataKuliah = scanner.nextInt() - 1;
 
         if (indexMataKuliah >= 0 && indexMataKuliah < mataKuliah.length) {
-            System.out.println("Anda telah mendaftar untuk mata kuliah ini" + mataKuliah[indexMataKuliah]);
+            System.out.println("Anda telah mendaftar untuk mata kuliah ini");
         } else {
             System.out.println("Pilihan anda tidak valid.");
         }
@@ -63,8 +63,8 @@ public class Mahasiswa {
         System.out.println("\nJadwal Mata Kuliah");
         for (String[] jadwal : jadwalKuliah) {
             System.out.println("Mata Kuliah : " + jadwal[0]);
-            System.out.println("Hari : " + jadwal[1]);
-            System.out.println("Jam : " + jadwal[2]);
+            System.out.println("Hari        : " + jadwal[1]);
+            System.out.println("Jam         : " + jadwal[2]);
             System.out.println();
         }
     }
@@ -73,7 +73,7 @@ public class Mahasiswa {
         System.out.println("\nCek Nilai");
 
         for (int i = 0; i < mataKuliah.length; i++) {
-            System.out.print("Masukkan nilai mata kuliah anda " + mataKuliah[i] + ": ");
+            System.out.print("Masukkan nilai mata kuliah " + mataKuliah[i] + ": ");
             nilaiMahasiswa[i] = scanner.nextDouble();
         }
 
