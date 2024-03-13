@@ -12,4 +12,4 @@ c. Kontrak
 Class Diagram 1
 
 🔗 Link Penjelasan Tugas
-https://youtu.be/GOHOniWgyeY
+https://youtu.be/uT4agEq8zHE
