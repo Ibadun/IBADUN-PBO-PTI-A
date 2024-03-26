@@ -1,49 +1,57 @@
-package modul2;
+package Constructor;
+
+//1. Lakukan percobaan constructor diatas dan benahi jika menemukan kesalahan!
 
 import java.util.Scanner;
 
-public class MainStudent {
-    public static void main(String[] args) {
-    //no.4 
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Jumlah siswa adalah : ");
-    int jumlahSiswa = scanner.nextInt();
-    Student[] students = new Student[jumlahSiswa];
-    for (int i = 0; i < students.length; i++) {
-        students[i] = new Student();
+public class MainStudent {  
+
+    public static void main(String[] args) { 
+
+    //4. Bagaimana cara memasukkan jumlah siswa sesuai dengan keinginan user? Tuliskan kodenya dengan inputan user 
+    //yang interaktif! (key : menggunakan array) 
+    Scanner input = new Scanner(System.in);
+    System.out.print("Silakan masukkan jumlah siswa: ");
+    int jumlahSiswa = input.nextInt();
+    Student[] siswa = new Student[jumlahSiswa];
+    for (int i = 0; i < siswa.length; i++) {
+    siswa[i] = new Student();
     }
 
-    Student Nayla = new Student();
-    Nayla.setName("Nayla");
-    Nayla.setAddress("Madiun");
-    Nayla.setAge(18);
-    Nayla.setMath(98);
-    Nayla.setScience(90);
-    Nayla.setEnglish(89);
-    Nayla.displayMessage();
+    Student anna = new Student();  
+    anna.setName("Anna");  
+    anna.setAddress("Malang");  
+    anna.setAge(20);  
+    anna.setMath(100);  
+    anna.setScience(89);  
+    anna.setEnglish(80);  
+    anna.displayMessage();  
+      
+    //menggunakan constructor lain  
+    System.out.println("===================");  
+    Student chris = new Student("Chris", "Kediri", 21);  
+    chris.setMath(70);  
+    chris.setScience(60);  
+    chris.setEnglish(90);  
+    chris.displayMessage();
     
-    //menggunakan constructor lain
-    System.out.println("==================================");
-    Student Dani = new Student("Dani", "Ngawi", 17);
-    Dani.setMath(75);
-    Dani.setScience(65);
-    Dani.setEnglish(88);
-    Dani.displayMessage();
-    //siswa dengan nama Nayla dirubah informasi alamat dan umurnya melalui constructor
-    System.out.println("==================================");
-    //no.1 student jadi Student
-    Nayla = new Student("Silvi", "Ponorogo", 18);
-    Nayla.displayMessage();
+    //siswa  dengan  nama  anna  dirubah  informasi  alamat  dan umurnya melalui constructor  
+    System.out.println("===================");  
+    anna = new Student("anna", "Batu", 18); //1. student dengan s huruf kecil saya rubah menjadi S huruf besar
+    anna.displayMessage();  
+    
+    //siswa denagan nama chris dirubah informasi alamat dan umurnya melalui method  
+    System.out.println("===================");  
+    chris.setAddress("Surabaya");  
+    chris.setAge(22);  
+    chris.displayMessage();  
 
-    //siswa denagan nama Dani dirubah informasi alamat dan umurnya melalui method
-    System.out.println("==================================");
-    Dani.setAddress("Malang");
-    Dani.setAge(18);
-    Dani.displayMessage();
+    //2.  Tambahkan constructor pada class Student dengan parameter yang mempunyai parameter masing masing 
+    //nilai dari mata pelajaran yang ada! Kemudian buat contoh objeknya pada main Class!
+    Student Ibadun = new Student(97.5, 95.0, 97.5); 
 
-    // No. 5
-    Student.jumlahObjek(); 
-
-    scanner.close();
+    //5. Bagaimana cara menghitung banyaknya objek yang kita buat dari sebuah menginstance objek dari mein class? 
+    //Tuliskan kodenya kemudian tampilkan informasinya dengan memanggil method jumlahObjek() bertipe void! 
+    Student.jumlahObjek();
     }
 }
