@@ -1,85 +1,95 @@
-package modul2;
+package Constructor;
+
+//1. Lakukan percobaan constructor diatas dan benahi jika menemukan kesalahan!
 
 public class Student {
-    private String name; 
-    private String address; 
+    private String name;
+    private String address;
     private int age;
-    private double mathGrade; 
-    private double englishGrade; 
-    private double scienceGrade; 
-    private double average; 
-    // No. 5
+    private double mathGrade;
+    private double englishGrade;
+    private double scienceGrade;
+    private double average;
+
+    //5. Bagaimana cara menghitung banyaknya objek yang kita buat dari sebuah menginstance objek dari mein class? 
+    //Tuliskan kodenya kemudian tampilkan informasinya dengan memanggil method jumlahObjek() bertipe void! 
     private static int jumlahObjek = 0;
 
-    // no.1 : student() --> Student()
-    public Student(){
-        name = ""; 
-        address = ""; 
-        age = 0;
-        // No. 5
-        jumlahObjek++;
+    public Student(){ //1. student dengan s huruf kecil saya rubah menjadi S huruf besar
+    name = "";
+    address = "";
+    age = 0;
+    jumlahObjek++; //5. Meningkatkan nilai variabel
     }
-    public Student(String n, String a, int ag){ 
-        name = n;
-        address = a; 
-        age = ag;
-        // No. 5
-        jumlahObjek++;
+
+    public Student(String n, String a, int ag){
+    name = n;
+    address = a;
+    age = ag;
+    jumlahObjek++; //5. Meningkatkan nilai variabel
     }
-    // no.2 --> tambah constructor baru
-    public Student(String n, String a, int ag, double math, double english, double science) {
-        name = n;
-        address = a;
-        age = ag;
-        mathGrade = math;
-        englishGrade = english;
-        scienceGrade = science;
-        // No. 5
-        jumlahObjek++;
+
+    //2. Tambahkan constructor pada class Student dengan parameter yang mempunyai parameter masing masing 
+    //nilai dari mata pelajaran yang ada! Kemudian buat contoh objeknya pada main Class!
+    public Student(double math, double english, double science){
+    mathGrade = math;
+    englishGrade = english;
+    scienceGrade = science;
+    jumlahObjek++; //5. Meningkatkan nilai variabel
     }
-        public void setName(String n){
+
+    public void setName(String n){
         name = n;
     }
-    public void setAddress(String a){ 
-        address = a;
+    public void setAddress(String a){
+    address = a;
     }
-    public void setAge(int ag){ 
-        age = ag;
+    public void setAge(int ag){
+    age = ag;
     }
-    public void setMath(int math){ 
-        mathGrade = math;
+    public void setMath(int math){
+    mathGrade = math;
     }
-    public void setEnglish(int english){ 
-        englishGrade = english;
+    public void setEnglish(int english){
+    englishGrade = english;
     }
-    public void setScience(int science){ 
-        scienceGrade = science;
+    public void setScience(int science){
+    scienceGrade = science;
     }
-    private double getAverage(){ 
-        double result = 0;
-        result = (mathGrade + scienceGrade + englishGrade)/3;
-        return result;
+    private double getAverage(){
+    double result = 0;
+    result = (mathGrade+scienceGrade+englishGrade)/3;
+    return result;
     }
-    // no.3 : tambah method untuk menentukan siswa yang remidi
-    public boolean statusAkhir(){ 
+
+    //3. Tambahkan method dengan nilai balikan berupa boolean pada class student bernama statusAkhir untuk 
+    //menentukan apakah siswa tersebut remidi atau tidak. Ketentuannya adalah jika nilai lebih dari atau sama 
+    //dengan 61 adalah lolos sedangkan nilai kurang dari atau sama dengan 60 adakah remidi. Nilai yang di cari 
+    //adalah nilai rata rata untuk semua mapel. Kemudian nilai pada method statusAkhir tampilkan pada method 
+    //displayMessage! 
+    public boolean statusAkhir() {
         return getAverage() >= 61;
     }
-    public void displayMessage(){ 
-        System.out.println("Nama siswa      : "+ name);
-        System.out.println("Alamat          : "+ address); 
-        System.out.println("Umur            : "+ age + " tahun");
-        System.out.println("Nilai rata-rata : " + getAverage());
 
-        // no.3
-        if (statusAkhir()) {
-            System.out.println("Hasil           : LOLOS");
-        } else {
-            System.out.println("Hasil           : BELUM LOLOS");
-        }
+    public void displayMessage(){
+    System.out.println("Siswa dengan nama " + name);
+    System.out.println("beramalat di " + address);
+    System.out.println("berumur " + age);
+    System.out.println("mempunyai nilai rata rata " + getAverage());
+
+    //3. Menampilkan status akhir siswa
+    if (statusAkhir()) {
+        System.out.println("Status : Lolos");
+    } else {
+        System.out.println("Status : Remidi");
     }
+}
 
-    // no.5 : method untuk menghitung jumlah objek yang telah dibuat
+    //5. Bagaimana cara menghitung banyaknya objek yang kita buat dari sebuah menginstance objek dari mein class? 
+    //Tuliskan kodenya kemudian tampilkan informasinya dengan memanggil method jumlahObjek() bertipe void! 
+
     public static void jumlahObjek() {
-        System.out.println("Anda telah memanggil objek sebanyak "+jumlahObjek+" kali, kereeennnn");
-    }
+    System.out.println("Jumlah objek Student yang telah dibuat : " + jumlahObjek);
+}
+
 }
