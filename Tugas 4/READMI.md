@@ -11,3 +11,4 @@ Class Diagram 2 dst
 Implementasi CRUD
 
 🔗 Link Penjelasan Tugas
+https://youtu.be/Awu8112IEf8?si=QyYZfBtu1tKSNsXR
