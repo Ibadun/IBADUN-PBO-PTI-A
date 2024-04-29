@@ -1,0 +1,23 @@
+1. kode program tersebut sudah benar dan tidak terdapat kesalahan
+
+2. konstruktor pada subclass dapat memanggil konstruktor di superclass menggunakan kata kunci 'super()'.
+Sebagai contoh dapat dilihat pada konstruktor Manager, yang mana nantinya subclass akan memanggil konstruktor employee
+pada superclass dengan menggunakan super(name, salary, year, month, day). Hal ini sangat diperlukan untuk membuat objek
+employee terinisialisasi dengan benar ketika objek Manager dibuat.
+
+3.Tidak ada perubahan yang terjadi ketika kode dijalankan
+
+4.Ketika kita menambahkan bonus setelah variabel day, maka akan eror
+
+5.Ketika this dihapus pada terminal akan menampilkan hasil 0 atau tidak ada angka yang keluar
+
+6.Ketika constructor pada class Employee ditambahkan dengan parameter Bertipe data string bernama name, tidak ada perubahan dan tidak ada kesalahan
+
+7.Pada super class, penggunaan modifier protected digunakan untuk memberikan akses yang terbatas kepada kelas-kelas yang berada dalam paket yang 
+sama atau kepada subclass dari super class tersebut di mana super class tersebut dideklarasikan. Jika modifier pada anggota super class diubah menjadi 
+private, maka anggota tersebut hanya akan dapat diakses oleh kelas itu sendiri. Ini akan menyebabkan anggota tersebut tidak dapat diakses oleh subclass.
+Sebaliknya, jika modifier diubah menjadi public, maka anggota tersebut akan dapat diakses oleh kelas mana pun, baik kelas dalam paket yang sama maupun kelas di luar paket.
+
+8. Ketika acces modifier method pada kelas employee dibuah menjadi Private dan Protected yang terjadi adalah :
+- Ketika diubah menjadi private dan kode program tersebut dijalankan akan terjadi eror
+- Ketika diubah menjadi protected dan kode program dijalankan tidak ada yang berubah dan hasil di terminal sama dengan sebelumnya.
