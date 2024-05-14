@@ -1,0 +1,12 @@
+1. fungsi extends digunakan untuk menyatakan bahwa sebuah kelas adalah subclass dari kelas lain. 
+Ini berarti bahwa subclass mewarisi semua anggota (fields dan methods) dari superclass. 
+sedangkan fungsi super digunakan untuk merujuk pada konstruktor atau anggota dari superclass dari dalam subclass.
+
+2. Dalam konstruktor, this digunakan untuk merujuk pada variabel instance dari kelas saat ini. Ini berguna terutama ketika 
+parameter konstruktor memiliki nama yang sama dengan variabel instance. 
+Pada Setter Dalam metode setter, this digunakan untuk membedakan antara variabel instance dan parameter metode ketika 
+mereka memiliki nama yang sama. 
+Pada Getter, this sebenarnya tidak diperlukan karena tidak ada ambiguitas antara variabel instance dan parameter metode. 
+Namun, this dapat digunakan untuk kejelasan, meskipun jarang diperlukan.
+
+3. 
